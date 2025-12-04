@@ -1,0 +1,345 @@
+body{
+   background-color: #000000;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 7vw 2vh 5vw;
+    color: aqua;
+    font-size: 1.2vw;
+}
+.logo{
+    font-size: 1.5vw;
+}
+.nav-content{
+    display: flex;
+    column-gap: 6.5vw;
+    cursor: pointer;
+}
+.nav-btn{
+   position: relative;
+}
+.nav-btn::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.5vh;
+    background-color: aqua;
+    transition: width 0.3 ease;
+}
+.nav-btn:active::after{
+   width: 100%;
+  
+}
+img{
+   width: 480px;    
+  height: auto;
+  object-fit: contain;
+}
+.homepage{
+    display: flex;
+    padding: 0 6.5vw 0 5vw;
+    column-gap: 10vw;
+}
+.headline{
+  padding-top: 20vh;
+  font-size: 2.8vw;
+  color: whitesmoke;
+}
+span{
+    font-size: 4vw;
+    color:aqua;
+}
+.description{
+    font-size: 2vw;
+    color: whitesmoke;
+    padding-top: 3vh;
+}
+.home-btn{
+    padding-top: 10vh;
+    display: flex;
+    column-gap: 4vw;
+}
+button{
+    width: 10vw;
+    height: 8vh;
+    font-size: 1.2vw;
+    background-color: black;
+    color:aqua;
+    border: none;
+    box-shadow: 1px 1.5px 5px 1px aqua;
+    cursor: pointer;
+}
+button:active{
+    box-shadow: none;   
+    border: 2px solid aqua; 
+}
+.about-section{
+    font-size: 3vw;
+    text-align: center;
+    margin-top: -20vh;
+    color: aqua;
+}
+.about-content{
+    justify-items: center;
+    font-size: 1.8vw;
+    padding: 3vh 3vw 0vh 3vw;
+    width: 80vw;
+    height: 30vh;
+    color: white;
+    justify-self: center;
+    border-radius: 1em;
+    margin-top: 10vh;
+}
+.feature-section,.benefit-section,.review-section,.price-section,.contact-section{
+    text-align: center;
+    font-size: 3vw;
+    color: aqua;
+    margin-top: 10vh;
+}
+.feature-box{
+    width: 25vw;
+    height: 40vh;
+    justify-items: center;
+}
+.feature-content{
+    width: 7.5vw;
+    height: 15vh;
+    background-color:black;
+    border-radius: 4em;
+     display: flex;
+  justify-content: center; 
+  align-items: center;    
+  box-shadow: 1px 1.5px 5px 1px  aqua;
+}
+.feature-svg{
+    width: 7vw;
+    height: 7vh;
+    color: aqua;
+}
+.feature-head{
+    font-size: 2vw;
+    color:#90e0ef;
+    padding-top: 2vh;
+}
+.sub-head{
+    font-size: 1.5vw;
+    padding-top: 2vh;
+    color: whitesmoke;
+}
+.feature{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10vh;
+}
+.benefit-box{
+    width: 25vw;
+    height: 30vh;
+    background-color: aquamarine;
+    color: black;
+    border-radius: 2em 0 2em 0;
+    cursor: pointer;
+}
+.benefit-box:hover{
+    transform: scale(1.06);
+    border-radius: 0 2em 0 2em;
+    
+}
+.benefit-header{
+    text-align: center;
+    font-size: 1.5vw;
+    padding-top: 2vh;
+    color: #212529;
+}
+.benefit-content{
+    padding: 3.5vh 2vw 2vh 2vw;
+    font-size: 1.5vw;
+    color: black;
+}
+.benefit-folder{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr auto;
+  margin-top: 15vh;
+  margin-left: 7.5vw;
+  margin-right: 4.5vw;
+  gap: 10vh;
+}
+.review-box{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr auto;
+    row-gap: 6vh;
+    margin: 15vh 9vw 0 9vw;
+}
+.box{
+    width: 30vw;
+    height: 15vh;
+    display: flex;
+    column-gap: 0;
+}
+.profile{
+    width: 5vw;
+    height: 10vh;
+    border: 0px solid;
+    border-radius: 4em;
+    background-color: red;
+    color: black;
+    text-align: center;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reviews{
+    display: flex;
+}
+.svg{
+  
+    display: flex;
+    margin-left: 2vw;
+}
+svg{
+    color: goldenrod;
+      width: 5vw;
+    height: 5vh;
+}
+.comment-section{
+    display: grid;
+}
+.comment{
+    font-size: 1.5vw;
+    margin-left: 2vw;
+    color: whitesmoke;
+}
+.pricing-table{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15vh;
+    color: whitesmoke;
+}
+ul{
+    margin-left: 1.7vw;
+}
+li{
+    font-size: 1.5vw;
+    margin-top: 2.5vh;
+}
+.price-btn{
+    border-radius: 2em;
+    margin: 2.8vw 3vw 0 5vw;
+    color: aqua;
+}
+.price-btn:active{
+    border: none;
+    background-color: green;
+    color: #000000;
+    box-shadow: none;
+}
+.table{
+    width: 20vw;
+    height: 80vh;
+    border: 3px solid aqua;
+    border-radius: 9em;
+}
+.price{
+    width: 10vw;
+    height: 20vh;
+    border: aqua 2px solid;
+    justify-self: center;
+    border-radius: 5em;
+    margin-top: 3vh;
+    color: black;
+    text-align: center;
+    background-color: aquamarine;
+}
+h2{
+    font-size: 3.5vw;
+}
+h1{
+    text-align: center;
+    margin-top: 4vh;
+    color: aqua;
+}
+.image{
+    width: 30vw;
+    height: 30vh;
+}
+.partnership{
+    display: flex;
+}
+.group{
+    display: flex;
+}
+.partnership{
+    overflow-x: auto;
+    margin-top: 10vh;
+    transition: all 0.6 ease-in-out;
+    animation: moveinX-axis 6s infinite linear;
+}
+.partnership::-webkit-scrollbar{
+    display: none;
+}
+@keyframes moveinX-axis{
+    0%{translate:0;}
+    100%{translate:-100%;}
+}
+.cta{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:15vh;
+}
+.cta-box{
+    width: 20vw;
+    height: 25vh;
+   
+     display: grid;
+    justify-items: center;
+       
+
+}
+.location-header{
+    font-size: 1.5vw;
+    color: aqua;
+}
+.address{
+    color: whitesmoke;
+    font-size: 1.2vw;
+}
+.feedback{
+    width: 100%;
+    height: 75vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+input,textarea{
+    font-size: 1.3vw;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    width: 25vw;
+    background: transparent;
+    padding: 8px 4px;
+    padding-top: 2vh;
+}
+.form-title{
+    font-size: 1.6vw;
+    padding-top: 5vh;
+}
+.submit-btn{
+    width: 10vw;
+    height: 7vh;
+    margin-top: 4vh;
+     box-shadow: none;
+}
+.feedback-header{
+    font-size: 2vw;
+}
+.svg-icon{
+    color: #000000;
+}
